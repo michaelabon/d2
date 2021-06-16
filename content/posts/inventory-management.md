@@ -29,6 +29,12 @@ I usually start here and then fine-tune the results with God Roll Finder.
 
 Compare your drops with 1) expert wisdom (same as DIM) and 2) community-selected perks.
 
+## [D2 Gunsmith]
+
+Craft your own god roll,
+see how the perks and masterworking affect the stats,
+and copy your wishlists into DIM.
+
 ## [D2 Checklist]
 
 Turns out, the armor that the vendors sell can actually be great!
@@ -50,6 +56,7 @@ Two different formats for you to choose:
 -   [Spreadsheet][lost-sector-spreadsheet]
 
 [D2 Checklist]: https://www.d2checklist.com/home
+[D2 Gunsmith]: https://d2gunsmith.com
 [Destiny Item Manager]: https://app.destinyitemmanager/
 [Destiny Optimizer]: https://destinyoptimizer.com/
 [Eververse Calendar]: https://www.todayindestiny.com/eververseCalendar
