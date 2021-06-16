@@ -6,6 +6,8 @@ summary: Callouts and Loot
 
 ![](/vault-of-glass/oracle-callouts-and-challenge.png)
 
+![](/vault-of-glass/gorgons.png)
+
 ![](/vault-of-glass/atheon-callouts.png)
 
 ![](/vault-of-glass/loot-table.png)
