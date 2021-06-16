@@ -12,15 +12,25 @@ is:item
 
 ## [God Roll Finder](https://www.light.gg/god-roll/roll-appraiser/)
 
+Compare your drops with 1) expert wisdom (same as DIM) and 2) community-selected perks.
+
 ## [Destiny Optimizer](https://destinyoptimizer.com/)
+
+Find out what powerful and pinnacle drops you should be chasing.
 
 ## [Vault Cleaner](https://destinyrecipes.com/vault)
 
+Figure out which weapon and armor rolls you should keep
+and which you should shard.
+It just locks/unlocks the results for you,
+so you can dismantle the items yourself.
 
 ## D2 Checklist
 
-Turns out, the armor that the vendors sell can actually be great! I've ignored Zavala's armor rolls for _years_.
-The _Armor Stat Deals_ section is a great way to find out who is selling armor that you might be interested in.
+Turns out, the armor that the vendors sell can actually be great!
+I've ignored Zavala's armor rolls for _years_.
+The _Armor Stat Deals_ section is a great way to find out
+who is selling armor that you might be interested in.
 
 [D2 Checklist](https://www.d2checklist.com/home)
 
