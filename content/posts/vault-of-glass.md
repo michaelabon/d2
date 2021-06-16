@@ -1,6 +1,6 @@
 ---
 title: "Vault of Glass"
-date: 2021-06-16T10:58:01-05:00
+date: 2021-06-16T12:20:28-05:00
 summary: Callouts and Loot
 ---
 

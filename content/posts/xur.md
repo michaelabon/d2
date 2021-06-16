@@ -2,6 +2,7 @@
 title: "Xûr"
 date: 2021-06-16T14:32:05-05:00
 summary: "Public Xûrvice Announcement: Find out what Xûr is selling each weekend"
+weight: 3
 ---
 
 ## [Where is Xûr?](https://whereisxur.com/)
