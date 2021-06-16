@@ -11,9 +11,6 @@ is:item
 # fill in with my go-to rolls
 ```
 
-## [Destiny Optimizer]
-
-Find out what powerful and pinnacle drops you should be chasing.
 
 ## [Vault Cleaner]
 
@@ -58,7 +55,6 @@ Two different formats for you to choose:
 [D2 Checklist]: https://www.d2checklist.com/home
 [D2 Gunsmith]: https://d2gunsmith.com
 [Destiny Item Manager]: https://app.destinyitemmanager/
-[Destiny Optimizer]: https://destinyoptimizer.com/
 [Eververse Calendar]: https://www.todayindestiny.com/eververseCalendar
 [God Roll Finder]: https://www.light.gg/god-roll/roll-appraiser/
 [Vault Cleaner]: https://destinyrecipes.com/vault
