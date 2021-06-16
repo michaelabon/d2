@@ -3,46 +3,57 @@ title: "Inventory Management"
 date: 2021-06-16T10:46:18-05:00
 summary: Feeling like your vault is stuffed? Can’t figure out what roll to keep?
 ---
-
-## [Destiny Item Manager](https://app.destinyitemmanager/)
+## [Destiny Item Manager]
 
 ```
 is:item
+
+# fill in with my go-to rolls
 ```
 
-## [God Roll Finder](https://www.light.gg/god-roll/roll-appraiser/)
-
-Compare your drops with 1) expert wisdom (same as DIM) and 2) community-selected perks.
-
-## [Destiny Optimizer](https://destinyoptimizer.com/)
+## [Destiny Optimizer]
 
 Find out what powerful and pinnacle drops you should be chasing.
 
-## [Vault Cleaner](https://destinyrecipes.com/vault)
+## [Vault Cleaner]
 
 Figure out which weapon and armor rolls you should keep
 and which you should shard.
-It just locks/unlocks the results for you,
+
+Vault Cleaner just locks/unlocks the results for you,
 so you can dismantle the items yourself.
 
-## D2 Checklist
+I usually start here and then fine-tune the results with God Roll Finder.
+
+## [God Roll Finder]
+
+Compare your drops with 1) expert wisdom (same as DIM) and 2) community-selected perks.
+
+## [D2 Checklist]
 
 Turns out, the armor that the vendors sell can actually be great!
 I've ignored Zavala's armor rolls for _years_.
 The _Armor Stat Deals_ section is a great way to find out
 who is selling armor that you might be interested in.
 
-[D2 Checklist](https://www.d2checklist.com/home)
-
 ## Today in Destiny
 
-The [Eververse Calendar](https://www.todayindestiny.com/eververseCalendar) is
-useful to find out what Tess will be selling for Silver and what she will be
-selling for Bright Dust.
+The [Eververse Calendar] is useful to
+find out what Tess will be selling for Silver
+and what she will be selling for Bright Dust.
 
 ## Lost Sector Calendar
 
 Two different formats for you to choose:
 
-- [Visual](https://www.todayindestiny.com/ls_calendar)
-- [Spreadsheet](https://docs.google.com/spreadsheets/d/1rWoyGWouGFismhk2BQzbeuV7PgoxzGRhxf2Kyi27kTo/edit#gid=0)
+-   [Visual][lost-sector-visual]
+-   [Spreadsheet][lost-sector-spreadsheet]
+
+[D2 Checklist]: https://www.d2checklist.com/home
+[Destiny Item Manager]: https://app.destinyitemmanager/
+[Destiny Optimizer]: https://destinyoptimizer.com/
+[Eververse Calendar]: https://www.todayindestiny.com/eververseCalendar
+[God Roll Finder]: https://www.light.gg/god-roll/roll-appraiser/
+[Vault Cleaner]: https://destinyrecipes.com/vault
+[lost-sector-spreadsheet]: https://docs.google.com/spreadsheets/d/1rWoyGWouGFismhk2BQzbeuV7PgoxzGRhxf2Kyi27kTo/edit#gid=0
+[lost-sector-visual]: https://www.todayindestiny.com/ls_calendar
