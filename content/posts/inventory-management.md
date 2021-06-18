@@ -5,6 +5,9 @@ summary: Feeling like your vault is stuffed? Can’t figure out what roll to kee
 ---
 ## [Destiny Item Manager]
 
+<details>
+<summary>Here are my go-to searches</summary>
+    
 ### Favourite these:
 
     is:armor basestat:custom:>=32 not:classitem tag:none not:exotic not:blue
@@ -32,7 +35,7 @@ which combined becomes:
 
     tag:junk power:>powerfulcap
 
-
+</details>
 
 ## [Vault Cleaner]
 
