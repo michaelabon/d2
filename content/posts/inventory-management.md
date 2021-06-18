@@ -5,11 +5,33 @@ summary: Feeling like your vault is stuffed? Can’t figure out what roll to kee
 ---
 ## [Destiny Item Manager]
 
-```
-is:item
+### Favourite these:
 
-# fill in with my go-to rolls
-```
+    is:armor basestat:custom:>=32 not:classitem tag:none not:exotic not:blue
+
+### Keep these:
+
+    is:armor basestat:total:>=64 not:classitem tag:none not:exotic not:blue
+
+### Raid armor - consider keeping these for the mod slot
+
+    (holdsmod:vaultofglass OR holdsmod:deepstonecrypt) tag:none
+
+### Junk these:
+
+    is:armor basestat:total:<64 basestat:custom:<32 not:classitem not:exotic not:maxpower  not:tagged not:inloadout
+    is:classitem energycapacity:<5 not:tagged  not:maxpower not:inloadout
+    perk:"field prep" OR perk:"firmly planted" OR perk:"sneak bow" tag:none  not:maxpower
+    is:blue not:tagged not:maxpower not:inloadout (is:armor OR is:weapon)
+
+which combined becomes:
+
+    (is:armor basestat:total:<64 basestat:custom:<32 not:classitem not:exotic not:maxpower  not:tagged not:inloadout) OR (is:classitem energycapacity:<5 not:tagged  not:maxpower not:inloadout) OR (perk:"field prep" OR perk:"firmly planted" OR perk:"sneak bow" tag:none  not:maxpower) OR (is:blue not:tagged not:maxpower not:inloadout (is:armor OR is:weapon))
+
+### Infuse these:
+
+    tag:junk power:>powerfulcap
+
 
 
 ## [Vault Cleaner]
