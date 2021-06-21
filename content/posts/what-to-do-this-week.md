@@ -3,6 +3,8 @@ title: "What to do this week?"
 date: 2021-06-16T14:46:28-05:00
 summary: Checklists, triumphs, collections
 weight: 1
+keywords:
+- "outside"
 ---
 
 ## [Destiny Optimizer]

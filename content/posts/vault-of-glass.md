@@ -2,6 +2,9 @@
 title: "Vault of Glass"
 date: 2021-06-16T12:20:28-05:00
 summary: Callouts and Loot
+keywords:
+- "raids and dungeons"
+- "raid"
 ---
 
 ## Basic Maps

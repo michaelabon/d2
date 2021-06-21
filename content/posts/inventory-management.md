@@ -3,6 +3,8 @@ title: "Inventory Management"
 date: 2021-06-16T10:46:18-05:00
 summary: Feeling like your vault is stuffed? Can’t figure out what roll to keep?
 weight: 2
+keywords:
+- "outside"
 ---
 ## [Destiny Item Manager]
 
