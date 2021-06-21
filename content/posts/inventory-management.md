@@ -18,7 +18,7 @@ summary: Feeling like your vault is stuffed? Can’t figure out what roll to kee
 
 ### Raid armor - consider keeping these for the mod slot
 
-    (holdsmod:vaultofglass OR holdsmod:deepstonecrypt) tag:none
+    (is:armor source:raid) tag:none
 
 ### Junk these:
 
