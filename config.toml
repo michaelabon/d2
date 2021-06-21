@@ -1,7 +1,0 @@
-baseURL = "https://d2.michaelabon.ca/"
-languageCode = "en-ca"
-title = "Destiny 2 Resources"
-theme = "binario"
-
-[markup.goldmark.renderer]
-unsafe = true

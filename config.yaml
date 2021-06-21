@@ -1,0 +1,28 @@
+baseURL: "https://d2.michaelabon.ca/"
+languageCode: "en-ca"
+title: "Destiny 2 Resources"
+theme: "binario"
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+related:
+  includeNewer: true
+  threshold: 80
+  toLower: false
+  indices:
+    - name: "keywords"
+      weight: 100
+    - name: "date"
+      weight: 10
+Params:
+  copyright: "Michael Abon"
+  schema: true
+  dateFormat: "2006-01-02"
+  related: true
+  Social:
+    twitter: "MrMichaelAbon"
+    github: "michaelabon"
+  Share:
+    twitter: true
+    reddit: true
