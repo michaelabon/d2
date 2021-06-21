@@ -1,5 +1,5 @@
 ---
-title: "What to do this week?"
+title: "What to Do This Week?"
 date: 2021-06-16T14:46:28-05:00
 summary: Checklists, triumphs, collections
 weight: 1
