@@ -13,13 +13,17 @@ keywords:
     
 ### Favourite these:
 
-    is:armor basestat:custom:>=32 not:classitem tag:none not:exotic not:blue
+    basestat:custom:>=32 tag:none not:exotic not:blue
 
 ### Keep these:
 
-    is:armor basestat:total:>=64 not:classitem tag:none not:exotic not:blue
-    basestat:highest:>=25 basestat:secondhighest:>=20
+    basestat:total:>=64 tag:none not:exotic not:blue
+    basestat:highest:>=25 basestat:secondhighest:>=20 tag:none not:exotic not:blue
 
+which combined becomes:
+    
+    (basestat:total:>=64) OR (basestat:highest:>=25 basestat:secondhighest:>=20) tag:none not:exotic not:blue
+    
 ### Raid armor - consider keeping these for the mod slot
 
     (is:armor source:raid) tag:none
