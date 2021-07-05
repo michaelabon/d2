@@ -45,6 +45,127 @@ which combined becomes:
 
 </details>
 
+<details>
+    <summary>TMMania has a good Vault Analyzer search, which I've modified below</summary>
+    
+    ("TMMania's Vault Analyzer** | Highlights Trash |
+    Update Version: July 4th, 2021"
+    or
+    (
+    (
+        (
+        is:weapon is:blue or "Removed sunset filter"
+        )
+    or
+    (
+        (is:armor -is:exotic -is:classitem)
+
+        -(source:raid -source:dcv OR "Removed is:dupelower, since I want to have multiple energy types")
+        -(source:events)
+
+        -(maxbasestatvalue:any)
+        -(basestat:any:>=23)
+        -(basestat:total:>=65)
+
+        -(((basestat:mobility&resilience:>=17.5) or
+        (basestat:mobility&recovery:>=17.5) or
+        (basestat:mobility&discipline:>=17.5) or
+        (basestat:mobility&intellect:>=17.5) or
+        (basestat:mobility&strength:>=17.5) or
+        (basestat:resilience&mobility:>=17.5) or
+        (basestat:resilience&recovery:>=17.5) or
+        (basestat:resilience&discipline:>=17.5) or
+        (basestat:resilience&intellect:>=17.5) or
+        (basestat:resilience&strength:>=17.5) or
+        (basestat:recovery&mobility:>=17.5) or
+        (basestat:recovery&resilience:>=17.5) or
+        (basestat:recovery&discipline:>=17.5) or
+        (basestat:recovery&intellect:>=17.5) or
+        (basestat:recovery&strength:>=17.5) or
+        (basestat:discipline&mobility:>=17.5) or
+        (basestat:discipline&resilience:>=17.5) or
+        (basestat:discipline&recovery:>=17.5) or
+        (basestat:discipline&intellect:>=17.5) or
+        (basestat:discipline&strength:>=17.5) or
+        (basestat:intellect&mobility:>=17.5) or
+        (basestat:intellect&resilience:>=17.5) or
+        (basestat:intellect&recovery:>=17.5) or
+        (basestat:intellect&discipline:>=17.5) or
+        (basestat:intellect&strength:>=17.5) or
+        (basestat:strength&mobility:>=17.5) or
+        (basestat:strength&resilience:>=17.5) or
+        (basestat:strength&recovery:>=17.5) or
+        (basestat:strength&discipline:>=17.5) or
+        (basestat:strength&intellect:>=17.5)) -basestat:secondhighest:<15)
+
+        -(((basestat:mobility&resilience&recovery:>=15) or
+        (basestat:mobility&resilience&discipline:>=15) or
+        (basestat:mobility&resilience&intellect:>=15) or
+        (basestat:mobility&resilience&strength:>=15) or
+        (basestat:mobility&recovery&discipline:>=15) or
+        (basestat:mobility&recovery&intellect:>=15) or
+        (basestat:mobility&recovery&strength:>=15) or
+        (basestat:mobility&discipline&intellect:>=15) or
+        (basestat:mobility&discipline&strength:>=15) or
+        (basestat:mobility&intellect&strength:>=15) or
+        (basestat:resilience&recovery&discipline:>=15) or
+        (basestat:resilience&recovery&intellect:>=15) or
+        (basestat:resilience&recovery&strength:>=15) or
+        (basestat:resilience&discipline&intellect:>=15) or
+        (basestat:resilience&discipline&strength:>=15) or
+        (basestat:resilience&intellect&strength:>=15) or
+        (basestat:recovery&discipline&intellect:>=15) or
+        (basestat:recovery&discipline&strength:>=15) or
+        (basestat:recovery&intellect&strength:>=15) or
+        (basestat:discipline&intellect&strength:>=15)) -basestat:thirdhighest:<11)
+
+        -(((basestat:mobility&resilience&recovery&intellect:>=13.25) or
+        (basestat:mobility&resilience&recovery&discipline:>=13.25) or
+        (basestat:mobility&resilience&recovery&strength:>=13.25) or
+        (basestat:mobility&resilience&intellect&discipline:>=13.25) or
+        (basestat:mobility&resilience&intellect&strength:>=13.25) or
+        (basestat:mobility&resilience&discipline&strength:>=13.25) or
+        (basestat:mobility&recovery&intellect&discipline:>=13.25) or
+        (basestat:mobility&recovery&intellect&strength:>=13.25) or
+        (basestat:mobility&recovery&discipline&strength:>=13.25) or
+        (basestat:mobility&intellect&discipline&strength:>=13.25) or
+        (basestat:resilience&recovery&intellect&discipline:>=13.25) or
+        (basestat:resilience&recovery&intellect&strength:>=13.25) or
+        (basestat:resilience&recovery&discipline&strength:>=13.25) or
+        (basestat:resilience&intellect&discipline&strength:>=13.25) or
+        (basestat:recovery&intellect&discipline&strength:>=13.25)) -basestat:fourthhighest:<10)
+
+        -(basestat:mobility&resilience&recovery&discipline&intellect&strength:>=9 basestat:sixthhighest:>5 basestat:highest:<15)
+    )
+
+    or
+        (is:classitem energycapacity:<=5 -is:modded -is:locked -(source:raid -is:dupelower -source:dcv))
+    or
+        (is:armor is:sunset)
+    or
+        (is:armor is:blue -(name:"war mantis" is:gauntlets))	
+    or
+        ((is:armor or is:weapon) and (is:common or is:uncommon))
+    )
+    -(is:tagged -tag:junk) -is:maxpower -power:pinnaclecap -is:inloadout -is:masterwork -(is:armor -is:armor2.0)
+    )  or (tag:junk -is:maxpower)
+    )
+
+</details>
+    
+<details>
+    <summary>New Item Checking</summary>
+    
+    ("New Item Checking" or (-(-is:armor -is:weapon) -is:classitem -is:maxpower is:new))
+</details>
+    
+<details>
+    <summary>Top 0.01% of all Armor</summary>
+    
+    "Top 0.01% of all Armor" or is:armor -is:classitem ((((basestat:mobility&resilience:>=26 ) or (basestat:mobility&recovery:>=26 ) or (basestat:mobility&discipline:>=26 ) or (basestat:mobility&intellect:>=26 ) or (basestat:mobility&strength:>=26 ) or (basestat:resilience&mobility:>=26 ) or (basestat:resilience&recovery:>=26 ) or (basestat:resilience&discipline:>=26 ) or (basestat:resilience&intellect:>=26 ) or (basestat:resilience&strength:>=26 ) or (basestat:recovery&mobility:>=26 ) or (basestat:recovery&resilience:>=26 ) or (basestat:recovery&discipline:>=26 ) or (basestat:recovery&intellect:>=26 ) or (basestat:recovery&strength:>=26 ) or (basestat:discipline&mobility:>=26 ) or (basestat:discipline&resilience:>=26 ) or (basestat:discipline&recovery:>=26 ) or (basestat:discipline&intellect:>=26 ) or (basestat:discipline&strength:>=26 ) or (basestat:intellect&mobility:>=26 ) or (basestat:intellect&resilience:>=26 ) or (basestat:intellect&recovery:>=26 ) or (basestat:intellect&discipline:>=26 ) or (basestat:intellect&strength:>=26 ) or (basestat:strength&mobility:>=26 ) or (basestat:strength&resilience:>=26 ) or (basestat:strength&recovery:>=26 ) or (basestat:strength&discipline:>=26 ) or (basestat:strength&intellect:>=26 )) -basestat:thirdhighest:>=17) or (((basestat:mobility&resilience&recovery:>=19.66 ) or (basestat:mobility&resilience&discipline:>=19.66 ) or (basestat:mobility&resilience&intellect:>=19.66 ) or (basestat:mobility&resilience&strength:>=19.66 ) or (basestat:mobility&recovery&discipline:>=19.66 ) or (basestat:mobility&recovery&intellect:>=19.66 ) or (basestat:mobility&recovery&strength:>=19.66 ) or (basestat:mobility&discipline&intellect:>=19.66 ) or (basestat:mobility&discipline&strength:>=19.66 ) or (basestat:mobility&intellect&strength:>=19.66 ) or (basestat:resilience&recovery&discipline:>=19.66 ) or (basestat:resilience&recovery&intellect:>=19.66 ) or (basestat:resilience&recovery&strength:>=19.66 ) or (basestat:resilience&discipline&intellect:>=19.66 ) or (basestat:resilience&discipline&strength:>=19.66 ) or (basestat:resilience&intellect&strength:>=19.66 ) or (basestat:recovery&discipline&intellect:>=19.66 ) or (basestat:recovery&discipline&strength:>=19.66 ) or (basestat:recovery&intellect&strength:>=19.66 ) or (basestat:discipline&intellect&strength:>=19.66 )) -basestat:fourthhighest:>=14) or (((basestat:mobility&resilience&recovery&intellect:>=15.5 ) or (basestat:mobility&resilience&recovery&discipline:>=15.5 ) or (basestat:mobility&resilience&recovery&strength:>=15.5 ) or (basestat:mobility&resilience&intellect&discipline:>=15.5 ) or (basestat:mobility&resilience&intellect&strength:>=15.5 ) or (basestat:mobility&resilience&discipline&strength:>=15.5 ) or (basestat:mobility&recovery&intellect&discipline:>=15.5 ) or (basestat:mobility&recovery&intellect&strength:>=15.5 ) or (basestat:mobility&recovery&discipline&strength:>=15.5 ) or (basestat:mobility&intellect&discipline&strength:>=15.5 ) or (basestat:resilience&recovery&intellect&discipline:>=15.5 ) or (basestat:resilience&recovery&intellect&strength:>=15.5 ) or (basestat:resilience&recovery&discipline&strength:>=15.5 ) or (basestat:resilience&intellect&discipline&strength:>=15.5 ) or (basestat:recovery&intellect&discipline&strength:>=15.5 )) -basestat:fifthhighest:>=12) or (((basestat:mobility&resilience&recovery&discipline&intellect:>=12.8) or (basestat:mobility&resilience&recovery&discipline&strength:>=12.8) or (basestat:mobility&resilience&recovery&intellect&strength:>=12.8) or (basestat:mobility&resilience&discipline&intellect&strength:>=12.8) or (basestat:mobility&recovery&discipline&intellect&strength:>=12.8) or (basestat:resilience&recovery&discipline&intellect&strength:>=12.8)) -basestat:sixthhighest:>=12 ) or (basestat:mobility&resilience&recovery&discipline&intellect&strength:>=11 basestat:sixthhighest:>5 basestat:highest:<15))	
+</details>
+
+
 ## [Vault Cleaner]
 
 Figure out which weapon and armor rolls you should keep
