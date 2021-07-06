@@ -180,6 +180,10 @@ I usually start here and then fine-tune the results with God Roll Finder.
 ## [God Roll Finder]
 
 Compare your drops with 1) expert wisdom (same as DIM) and 2) community-selected perks.
+    
+```
+Array.from(document.querySelectorAll('.weapon-type')).forEach(container => Array.from(container.querySelectorAll('.roll')).sort((a, b) => a.querySelector('.item-title').querySelector('strong').innerText.localeCompare(b.querySelector('.item-title').querySelector('strong').innerText)).forEach(node => container.appendChild(node)))
+```
 
 ## [D2 Gunsmith]
 
