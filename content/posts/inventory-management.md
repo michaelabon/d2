@@ -181,8 +181,53 @@ I usually start here and then fine-tune the results with God Roll Finder.
 
 Compare your drops with 1) expert wisdom (same as DIM) and 2) community-selected perks.
     
-```
-Array.from(document.querySelectorAll('.weapon-type')).forEach(container => Array.from(container.querySelectorAll('.roll')).sort((a, b) => a.querySelector('.item-title').querySelector('strong').innerText.localeCompare(b.querySelector('.item-title').querySelector('strong').innerText)).forEach(node => container.appendChild(node)))
+```js
+var qualities = ["S", "A", "B", "C", "D", "E", "F"].flatMap((x) => [
+  x + "+",
+  x,
+  x + "-",
+]);
+
+function titleOf(node) {
+  return node.querySelector(".item-title").querySelector("strong").innerText;
+}
+
+function qualityOf(node) {
+  var betterRoll = node.querySelector('ins.better-grade')
+  if (betterRoll) {
+    var quality = betterRoll.innerText.replace(" Grade Possible", "")
+  } else {
+    var quality = node.querySelector("ins.quality");
+    if (!quality) {
+      return Number.MAX_SAFE_INTEGER;
+    }
+    quality = quality.innerText;
+  }
+
+  if (!quality) {
+    return Number.MAX_SAFE_INTEGER;
+  }
+  return qualities.indexOf(quality);
+}
+
+Array.from(document.querySelectorAll(".weapon-type")).forEach((container) =>
+  Array.from(container.querySelectorAll(".roll"))
+    .sort((a, b) => {
+      var titleSort = titleOf(a).localeCompare(titleOf(b));
+      if (titleSort === 0) {
+        return qualityOf(a) - qualityOf(b);
+      }
+      return titleSort;
+    })
+    .forEach((node) => container.appendChild(node))
+);
+
+Array.from(document.querySelectorAll(".better-grade:not(.abon-add-better-quality)")).forEach(node => {
+  var quality = node.innerText.replace(" Grade Possible", "")
+
+  node.insertAdjacentText("beforeend", quality)
+  node.classList.add("abon-add-better-quality")
+})
 ```
 
 ## [D2 Gunsmith]
