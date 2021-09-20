@@ -63,4 +63,4 @@ HUGO_ENABLEGITINFO = "true"
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy: "default-src 'self';"
+    Content-Security-Policy = "default-src 'self';"
